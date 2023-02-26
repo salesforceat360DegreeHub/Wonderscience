@@ -6,5 +6,6 @@ public class C_AcoidRecursiveness {
     public static boolean sendFutureCall = true;
     
     public static boolean callTowebhook = true;
+    public static Boolean testing = false;
 
 }
