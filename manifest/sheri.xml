@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<!--NC-3605 - NC-3839 This story include automation of CMRProduct and CMRPReseller
+	in which user has to meet the criteria when he enters the product code and user code.-->
+	<types>
+		<members>Product_Code_Doesnot_Meet_Criteria</members>
+		<members>Product_Code_Exists</members>
+		<members>User_Code_Doesnot_Meet_Criteria</members>
+		<members>User_Code_Exists</members>
+		<name>CustomLabel</name>
+	</types>
+	<types>
+		<members>nextgen_ChannelMarketingTriggerHelper</members>
+		<members>nextgen_CMRPresellerTriggerHelper</members>
+		<members>nextgen_CMRProductTriggerHelper</members>
+		<members>nextgen_ChannelMarketingRuleTest</members>
+		<members>nextgen_CMRPresellerTest</members>
+		<members>nextgen_CMRProductTest</members>
+		<members>AvoidRecursiveTrigger</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>nextgen_ChannelMarketingRuleTrigger</members>
+		<members>nextgen_CMRPresellerTrigger</members>
+		<members>nextgen_CMRProductTrigger</members>
+		<name>ApexTrigger</name>
+	</types>
+	<!-- BUG NC-4124 added custom label and Edited Apex class-->
+	<types>
+		<members>End_Date_Greater_than_Start_Date</members>
+		<name>CustomLabel</name>
+	</types>
+	<types>
+		<members>nextgen_ChannelMarketingTriggerHelper</members>
+		<name>ApexClass</name>
+	</types>
+	<!-- BUG NC-4142,4144-->
+	<types>
+		<members>nextgen_ChannelMarketingRule__c-Key Account</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>nextgen_ChannelMarketingRule__c</members>
+		<name>CustomObject</name>
+	</types>
+	<!-- BUG NC-4142 -->
+	<types>
+		<members>nextgen_ChannelMarketingRule__c-Key Account</members>
+		<members>nextgen_CMRPreseller__c-CMR Preseller Layout</members>
+		<members>nextgen_CMRProduct__c-CMR Product Layout</members>
+		<name>Layout</name>
+	</types>
+	<!-- BUG NC-4173 -->
+	<types>
+		<members>nextgen_CMRPresellerTriggerHelper</members>
+		<name>ApexClass</name>
+	</types>
+	<!-- BUG NC-4142 V1 -->
+	<types>
+		<members>nextgen_ChannelMarketingRule__c-Key Account</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>nextgen_CMRPresellerTriggerHelper</members>
+		<name>ApexClass</name>
+	</types>
+	<!--BUG NC-4203 -->
+	<types>
+		<members>nextgen_CMRPresellerTriggerHelper</members>
+		<members>nextgen_CMRPresellerTest</members>
+		<name>ApexClass</name>
+	</types>
+	<!--BUGNC-3605/ NC-4236 -->
+	<types>
+		<members>nextgen_ChannelMarketingRule__c.Start_Date</members>
+		<name>ValidationRule</name>
+	</types>
+	<!--feature/Nc-3597-4358 -->
+	<types>
+		<members>nextgen_CustomerProductVisibility__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>nextgen_CustomerProductVisibility__c.nextgen_CustomerId__c</members>
+		<members>nextgen_CustomerProductVisibility__c.nextgen_IsRuleBased__c</members>
+		<members>nextgen_CustomerProductVisibility__c.nextgen_ProductId__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>nextgen_ProductRestrictions</members>
+		<name>ApexClass</name>
+	</types>
+	<!--feature/Nc-3597-4067 -->
+	<types>
+		<members>nextgen_CustomerProductVisibility__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>nextgen_CustomerProductVisibility__c.nextgen_CustomerId__c</members>
+		<members>nextgen_CustomerProductVisibility__c.nextgen_IsRuleBased__c</members>
+		<members>nextgen_CustomerProductVisibility__c.nextgen_ProductId__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>nextgen_ProductRestrictions</members>
+		<members>EbestDownloadService</members>
+		<name>ApexClass</name>
+	</types>
+	<!--feature/Nc-3597-4067V1 -->
+	<types>
+		<members>nextgen_ProductRestrictions</members>
+		<members>nextgen_ProductRestrictions_Test</members>
+		<members>EbestDownloadService</members>
+		<members>EbestDownloadServiceTest</members>
+		<name>ApexClass</name>
+	</types>
+	<!-- feature/NC-3597 -->
+	<types>
+		<members>nextgen_ProductRestrictions</members>
+		<members>nextgen_ProductRestrictions_Test</members>
+		<members>EbestDownloadService</members>
+		<members>EbestDownloadServiceTest</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>nextgen_CustomerProductVisibility__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>nextgen_CustomerProductVisibility__c.nextgen_CustomerId__c</members>
+		<members>nextgen_CustomerProductVisibility__c.nextgen_IsRuleBased__c</members>
+		<members>nextgen_CustomerProductVisibility__c.nextgen_ProductId__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Product2.ebMobile__MobileFields</members>
+		<name>FieldSet</name>
+	</types>
+	<!-- NC-1430-->
+	<types>
+		<members>nextgen_ProductRestrictions</members>
+		<members>nextgen_ProductRestrictions_Test</members>
+		<members>EbestDownloadService</members>
+		<members>EbestDownloadServiceTest</members>
+		<members>nextgen_API_GetProducts</members>
+		<name>ApexClass</name>
+	</types>
+	<!-- NC-1430-PR2-->
+	<types>
+		<members>nextgen_ProductRestrictions</members>
+		<members>nextgen_ProductRestrictions_Test</members>
+		<members>EbestDownloadService</members>
+		<members>EbestDownloadServiceTest</members>
+		<members>nextgen_API_GetProducts</members>
+		<members>nextgen_API_GetProducts_Test</members>
+		
+		<name>ApexClass</name>
+	</types>
+	<!-- NC-1430-PR3-->
+	<types>
+		<members>nextgen_ProductRestrictions</members>
+		<members>nextgen_ProductRestrictions_Test</members>
+		<members>EbestDownloadService</members>
+		<members>EbestDownloadServiceTest</members>
+		<members>nextgen_API_GetProducts</members>
+		<members>nextgen_API_GetProducts_Test</members>
+		<name>ApexClass</name>
+	</types>
+	<!-- feature/NC-3597 -->
+	<types>
+		<members>nextgen_ProductRestrictions</members>
+		<members>nextgen_ProductRestrictions_Test</members>
+		<members>EbestDownloadService</members>
+		<members>EbestDownloadServiceTest</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>nextgen_CustomerProductVisibility__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>nextgen_CustomerProductVisibility__c.nextgen_CustomerId__c</members>
+		<members>nextgen_CustomerProductVisibility__c.nextgen_ProductId__c</members>
+		<members>nextgen_CustomerProductVisibility__c.nextgen_IsRGMRuleBased__c</members>
+		<members>nextgen_CustomerProductVisibility__c.nextgen_IsCMRRuleBased__c</members>
+		<name>CustomField</name>
+	</types>
+	<!-- NC-1430-->
+	<types>
+		<members>nextgen_ProductRestrictions</members>
+		<members>nextgen_ProductRestrictions_Test</members>
+		<members>EbestDownloadService</members>
+		<members>EbestDownloadServiceTest</members>
+		<members>nextgen_API_GetProducts</members>
+		<members>nextgen_API_GetProducts_Test</members>
+		<name>ApexClass</name>
+	</types>
+
+	<!-- NC-1430-->
+	<types>
+		<members>nextgen_ProductRestrictions</members>
+		<members>nextgen_ProductRestrictions_Test</members>
+		<members>nextgen_API_GetProducts</members>
+		<members>nextgen_API_GetProducts_Test</members>
+		<name>ApexClass</name>
+	</types>
+
+	<!-- feature/NC-3597 -->
+	<!-- reverted changes -->
+	<!-- Post deployment steps involved in this -->
+	<!-- Change Product2 query in Cusotm setting for Mobile Object Configure for product2 records -->
+
+	<types>
+		<members>nextgen_ProductRestrictions</members>
+		<members>EbestDownloadService</members>
+		<name>ApexClass</name>
+	</types>
+	<!-- NC-1430_4837-->
+	<types>
+		<members>nextgen_ProductRestrictions</members>
+		<members>nextgen_ProductRestrictions_Test</members>
+		<members>nextgen_API_GetProducts</members>
+		<members>nextgen_API_GetProducts_Test</members>
+		<name>ApexClass</name>
+	</types>
+	<!-- NC-1444-->
+	<types>
+		<members>DMSTeleSalesTodayCallListCtrl</members>
+		<members>DMSTeleSalesTodayCallListCtrlTest</members>
+		<name>ApexClass</name>
+	</types>
+	<!-- NC-1454-->
+	<types>
+		<members>DMSSalesOrderCtrl</members>
+		<members>DMSSalesOrderCtrlTest</members>
+		<members>PricingSyncService</members>
+		<members>PricingSyncServiceTest</members>
+		<name>ApexClass</name>
+	</types>
+	<!-- NC-1454- PR2-->
+	<types>
+		<members>DMSSalesOrderCtrl</members>
+		<members>DMSSalesOrderCtrlTest</members>
+		<members>PricingSyncService</members>
+		<members>PricingSyncServiceTest</members>
+		<name>ApexClass</name>
+	</types>
+	<!-- NC-4930-B-->
+	<types>
+		<members>posmOrderIntegratorTest</members>
+		<members>nextgen_POSMOrderTriggerHelper</members>
+		<name>ApexClass</name>
+	</types>
+	<!-- NC-4617-B-->
+	<types>
+		<members>OrderItemTrigger2</members>
+		<name>ApexTrigger</name>
+	</types>
+	<types>
+		<members>OrderIntegratorTest</members>
+		<name>ApexClass</name>
+	</types>
+	<!-- NC-4617-B-PR2-->
+	<types>
+		<members>OrderItemTrigger2</members>
+		<name>ApexTrigger</name>
+	</types>
+	<types>
+		<members>OrderIntegratorTest</members>
+		<name>ApexClass</name>
+	</types>
+	<!--    NC-4533-PR1 -->
+    <types>
+		<members>ebMobile__POSMOrderHeader__c.nextgen_TotalNetAmount__c</members>
+		<name>CustomField</name>    
+    </types>
+    <types>
+		<members>ebMobile__POSMOrderHeader__c-ebMobile__POSM Order Header Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>ebMobile__POSMOrderHeader__c.ebMobile__MobileFields</members>
+		<name>FieldSet</name>
+	</types>
+	<!-- NC-3747-5554 -->
+	<types>
+		<members>Order-ebest DMS Sales Order Layout</members>
+		<name>Layout</name>
+	</types>
+	<!--NC-5662-->
+	<types>
+		<members>Account.nextgen_service_type__c</members>
+		<name>CustomField</name>
+	</types>  
+	<!--NC-5506-F-->
+	<types>
+        <members>Order.ebMobile__OrderSource__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Order-en_US</members>
+		<members>Order-tr</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+	<!-- NC-5101 -->
+	<types>
+		<members>UserMetricsBatch</members>
+		<members>UserMetricsBatchTest</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>Account.ebMobile__MobileFields</members>
+		<name>FieldSet</name>
+	</types>
+	<!--Also create records as part of post deployment steps for Role Metrics-->
+		<!--LIST<ebMobile__Metrics__c> metricList = [Select Id,ebMobile__PeriodType__c,ebMobile__IsActive__c,ebMobile__MetricType__c FROM ebMobile__Metrics__c WHERE  ebMobile__MetricType__c IN ('Sales Revenue', 'Sales Volume') AND ebMobile__PeriodType__c IN ('Daily','Monthly','Yearly')];
+		for(ebMobile__Metrics__c metricObj : metricList){
+		metricObj.ebMobile__IsActive__c = true;
+		if(metricObj.ebMobile__MetricType__c == 'Sales Volume'){
+			metricObj.ebMobile__Description__c = 'UC Volume'; 
+		}
+		}
+		update metricList;-->
+		<version>52.0</version>
+</Package>
